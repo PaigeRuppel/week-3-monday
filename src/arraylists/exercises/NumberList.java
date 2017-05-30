@@ -18,19 +18,18 @@ public class NumberList {
 		numberExercise.add(14); // 8
 		numberExercise.add(5); // 9
 
-		containsNumbers();
+		containsNumbers(numberExercise);
 
 		numberExercise.remove(3); // removes 77
 		numberExercise.remove(3); // removes 922
 		numberExercise.remove(4); // removes 32
 		numberExercise.remove(3); // removes 6
 		System.out.println(numberExercise);
-		containsNumbers();
+		containsNumbers(numberExercise);
 
 	}
 
-	public static void containsNumbers() {
-		ArrayList<Integer> numberExercise = new ArrayList<Integer>();
+	public static void containsNumbers(ArrayList<Integer> numberExercise) {
 		if (numberExercise.contains(23)) {
 			System.out.println("The list contains 23.");
 		} else {
@@ -47,5 +46,4 @@ public class NumberList {
 			System.out.println("The list does not contain 15.");
 		}
 	}
-
 }

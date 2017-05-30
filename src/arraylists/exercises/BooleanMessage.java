@@ -15,7 +15,7 @@ public class BooleanMessage {
 		weather.add(false);
 		
 		for (Boolean weatherReturn : weather) {
-			if (weatherReturn == true) {
+			if (weatherReturn) { //why does this work?
 				System.out.println("Better bring an umbrella today!");
 			} else {
 				System.out.println("No rain today, enjoy the sun");
